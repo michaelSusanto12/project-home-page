@@ -86,7 +86,7 @@
               </div>
               <div class="row">
                 <div class="col-md-10" id="form">
-                  <form name='form-career'>
+                  <form name="Kontak-Form">
                     <div class="mb-3">
                       <label for="name" class="form-label">Nama Lengkap</label>
                       <input type="text" class="form-control" id="name" aria-describedby="name" name="nama">
@@ -108,18 +108,16 @@
                         <input type="file" id="myfile" name="cv">
                     </div>
                     </form>
-                    <button type="submit" class="btn" id="submit-btn">Submit</button>
+                    <button type="submit" class="btn btn-primary" id="submit-btn">Submit</button>
                   </form>
                 </div>
               </div>
             </div>
           </section>
-
           <script>
-            const scriptURL = 'https://script.google.com/macros/s/AKfycbzcaxJT3ZDMiAGxKbliEeo4O2hdZ31QWezIZWLNV7fJb2wI5aoYCPgF6SM7hVyUITuXQw/exec'
-            const form = document.forms['form-career']
-          
-            form.addEventListener('submit', e => {
+            const scriptURL ="https://script.google.com/macros/s/AKfycbzcaxJT3ZDMiAGxKbliEeo4O2hdZ31QWezIZWLNV7fJb2wI5aoYCPgF6SM7hVyUITuXQw/exec"
+            const form = document.forms['Kontak-Form']
+            form.addEventListener("submit", e => {
               e.preventDefault()
               fetch(scriptURL, { method: 'POST', body: new FormData(form)})
                 .then(response => console.log('Success!', response))
