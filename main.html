@@ -240,13 +240,13 @@
             
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active pt-4" aria-current="page" href="#">Home</a>
+                <a class="nav-link active pt-4" aria-current="page" href="main.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active pt-4" href="#container">About</a>
+                <a class="nav-link active pt-4" href="#about-us">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active pt-4" href="#kontak">Contact</a>
+                <a class="nav-link active pt-4" href="contact.html" target="_blank">Contact</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link active pt-4" href="Career.html" target="_blank">Career</a>
@@ -289,24 +289,24 @@
 
 <div class="photo1">
   <img src="9.jpg">
-  <button class="btn">Order Online</button>
+  <button class="btn" data-aos="fade-up" data-aos-duration="1700">Order Online</button>
 </div>
 
 <div class="photo2">
   <img src="2.jpg">
-  <button class="btn">See Our Menu</button>
+  <button class="btn" data-aos="fade-up" data-aos-duration="1700">See Our Menu</button>
 </div>
 
 <img class="photo4" src="1.jpg">
 
 <div class="photo3">
   <img src="7.jpg">
-  <button class="btn">Global Locations</button>
+  <button class="btn" data-aos="fade-up" data-aos-duration="1700">Global Locations</button>
 </div>
 
 
 <!--about me-->
-<div class="container" data-aos="fade-in" data-aos-duration="3000">
+<div class="container" data-aos="fade-in" data-aos-duration="2000" id="about-us">
   <img src="Star.jpeg" alt="Norway" id="kopi">
   <div class="text-block">
     <p>Every day, we go to work hoping to do two things: share great coffee with our friends and help make the world a little better. </p>
@@ -319,11 +319,17 @@
   AOS.init();
 </script>
 
-<!-- contact -->
-<div class="contact"> 
-<h1 id="kontak"> Contact us </h1>
-<p> 1500-600 </p>
-</div>
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbxp4Y2QDwKrILeorxXc75SsLqr8KGjgkEXVyIid3oZQHmQuXjl00PZhBdUBng3UMvKSEw/exec'
+  const form = document.forms['career-contact']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
 
 </body>
 </html>
