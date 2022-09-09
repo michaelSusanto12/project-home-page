@@ -1,96 +1,118 @@
 <html>
 
-    <head>
-        <!-- CSS only -->
+<head>
+    <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
     <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
     <!--animation-->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    </head>
+</head>
 
-    <body>
-        <style>
-            body{
-                background-color: #2B2523;
-            }
-            #career-picture-coffee{
-                margin-left: 900;
-                border-radius: 50%;
-
-            }
-            #judul-deskripsi{
-                text-align: center;
-                color: white;
-                padding-bottom: 150;
-                padding-top: 70;
-            }
-            #description-career{
-                text-align: center;
-                color: white;
-                font-size: medium;
-                margin-bottom: 50;
-            }
-        </style>
-        <div>
-            <nav class="navbar navbar-expand-lg text-light bg-dark navbar-dark pb-4" id="navbar-main">
-                <div class="container-fluid">
-                    <a class="navbar-brand text-white pt-3 ps-3 pe-2" href="#"></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                      </button>
-                  
-                  <div class="collapse navbar-collapse" id="navbarNav">
-                    
-                    <ul class="navbar-nav">
-                      <li class="nav-item">
-                        <a class="nav-link active pt-4" aria-current="page" href="#">Home</a>
+<body>
+    <style>
+        body{
+            background-color: #fae1bf;
+            scroll-behavior: smooth;
+          }
+          #form{
+            padding-left: 200;
+          }
+          #region-career{
+            margin-bottom: 10;
+          }
+          #submit-btn{
+            padding-right: 30;
+          }
+          #myfile{
+            padding-top: 15;
+            margin-bottom: 5;
+          }
+    </style>
+    
+    <div>
+        <nav class="navbar navbar-expand-lg text-light bg-dark navbar-dark pb-4" id="navbar-main">
+            <div class="container-fluid">
+                <a class="navbar-brand text-white pt-3 ps-3 pe-2" href="#"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+              
+              <div class="collapse navbar-collapse" id="navbarNav">
+                
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active pt-4" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active pt-4" href="#about-me-final">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active pt-4" href="#">Contact</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active pt-4" href="#">Career</a>
+                  </li>
+                  <ul class="navbar-nav pt-3 ">
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Location
+                      </a>
+                      <ul class="dropdown-menu dropdown-menu-dark">
+                        <li><a class="dropdown-item" href="#">
+                          Jakarta
+                        </a>
                       </li>
-                      <li class="nav-item">
-                        <a class="nav-link active pt-4" href="#">About</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link active pt-4" href="#">Contact</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link active pt-4" href="Career.html" target="_blank">Career</a>
-                      </li>
-                      <ul class="navbar-nav pt-3 ">
-                        <li class="nav-item dropdown">
-                          <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Location
-                          </a>
-                          <ul class="dropdown-menu dropdown-menu-dark">
-                            <li><a class="dropdown-item" href="#">
-                              Jakarta
-                            </a>
-                          </li>
-                            <li><a class="dropdown-item" href="#">Bali</a></li>
-                            <li><a class="dropdown-item" href="#">Surabaya</a></li>
-                          </ul>
-                        </li>
+                        <li><a class="dropdown-item" href="#">Bali</a></li>
+                        <li><a class="dropdown-item" href="#">Surabaya</a></li>
                       </ul>
-                    </ul>
-                  </div>
-                  <img src="shopping-cart (5).svg" alt="cart" class=" pt-2 pe-3">
-                </div>
-              </nav>
+                    </li>
+                  </ul>
+                </ul>
+              </div>
+              <img src="shopping-cart (5).svg" alt="cart" class=" pt-2 pe-3">
             </div>
-            <!--end of navbar career-->
+          </nav>
+        </div>
 
-            <section id="career-desc">
-                <div>
-                    <h1 id="judul-deskripsi">gawean ni</h1>
-                    <h1 id="description-career">Dengan misi untuk menyediakan kopi yang terbaik. We are defined by hourly made coffee</h1>
+        <section id="contact">
+            <div class="container">
+              <div class="row text-center pt-4">
+                <div class="col">
+                  <h1>Start your career with us</h1>
+          
                 </div>
-            </section>
-
-            <section>
-                <div style="background-color: #fae1bf;">
-                    <img src="mike-kenneally-zlwDJoKTuA8-unsplash.jpg" alt="coffee" width="300" id="career-picture-coffee" >
+              </div>
+              <div class="row">
+                <div class="col-md-10" id="form">
+                  <form>
+                    <div class="mb-3">
+                      <label for="name" class="form-label">Nama Lengkap</label>
+                      <input type="text" class="form-control" id="name" aria-describedby="name">
+                    </div>
+                    <div class="mb-3">
+                      <label for="email" class="form-label">Email</label>
+                      <input type="email" class="form-control" id="email">
+                    </div>
+                    <div>
+                    <label for="form-select" id="region-career">Region</label>
+                    <select class="form-select" aria-label="Default select example" id="region-career">
+                      <option value="1">Jakarta</option>
+                      <option value="2">Bali</option>
+                      <option value="3">Surabaya</option>
+                    </select>
+                    </div>
+                    <div>
+                        <label for="myfile" id="myfile">Masukkan CV anda</label>
+                        <input type="file" id="myfile" name="myfile">
+                    </div>
+                    </form>
+                    <button type="submit" class="btn" id="submit-btn">Submit</button>
+                  </form>
                 </div>
-
-            </section>
-    </body>
+              </div>
+            </div>
+          </section>
+</body>
 </html>
