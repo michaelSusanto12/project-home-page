@@ -54,9 +54,34 @@
       position: relative;
       top: 100;
       width: 100%;
-      height: "100";
+      height: "50";
 
     }
+
+    .photo1 img {
+      width: 100%;
+      height: auto;
+
+    }
+
+    .photo1 .btn {
+      position: absolute;
+      top: 50%;
+      left: 13%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      background-color: rgb(90, 47, 31);
+      color: white;
+      font-size: 20px;
+      padding: 12px 24px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .photo1 .btn:hover {
+    background-color: grey;
+}
 
     .photo2 {
       position: relative;
@@ -66,12 +91,74 @@
 
     }
 
+
+    .photo2 img {
+      width: 100%;
+      height: auto;
+
+    }
+
+    .photo2 .btn {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      background-color: rgb(90, 47, 31);
+      color: white;
+      font-size: 20px;
+      padding: 12px 24px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .photo2 .btn:hover {
+     background-color: grey;
+  
+    }
+
     .photo3 {
       position: relative;
       top: 100;
       width: 100%;
       height: "100";
       padding-bottom: 20;
+
+    }
+
+    .photo3 img {
+      width: 100%;
+      height: auto;
+
+    }
+
+    .photo3 .btn {
+      position: absolute;
+      top: 50%;
+      left: 10%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      background-color: rgb(90, 47, 31);
+      color: white;
+      font-size: 20px;
+      padding: 12px 24px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    
+    }
+
+    .photo3 .btn:hover {
+    background-color: grey;
+
+    }
+
+    .photo4 {
+      position: relative;
+      top: 100;
+      width: 100%;
+      height: "100";
 
     }
 
@@ -178,9 +265,23 @@
   <source src="Sugar Cookie_Trim.mp4">
 </video>
 
-<img class="photo1" src="9.jpg">
-<img class="photo2" src="2.jpg">
-<img class="photo3" src="7.jpg">
+<div class="photo1">
+  <img src="9.jpg">
+  <button class="btn">Order Online</button>
+</div>
+
+<div class="photo2">
+  <img src="2.jpg">
+  <button class="btn">See Our Menu</button>
+</div>
+
+<img class="photo4" src="1.jpg">
+
+<div class="photo3">
+  <img src="7.jpg">
+  <button class="btn">Global Locations</button>
+</div>
+
 
 <!--about me-->
 <div class="container" data-aos="fade-in" data-aos-duration="3000">
