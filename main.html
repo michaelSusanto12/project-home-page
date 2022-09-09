@@ -6,9 +6,14 @@
 <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+<!--animation-->
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <style>
+      body{
+        background-color: #fae1bf;
+      }
         #navbar-main{
             position: relative;
         }
@@ -66,15 +71,58 @@
       top: 100;
       width: 100%;
       height: "100";
+      padding-bottom: 20;
 
     }
+
+    #coffee-aboutme{
+      padding-bottom: 20;
+      border-radius:0px 0px 100px 0px;
+      width: 1050px;
+      height: 450px;
+      margin-top: 20;
+      padding-top: 100;
+      padding-left: 700;
+      margin-left: 160;
+      margin-top: 70;
+    }
+    /* Container holding the image and the text */
+    .container {
+    position: relative;
+    }
+
+/* Bottom right text */
+    .text-block {
+    position: absolute;
+    bottom: 230px;
+    right: 370px;
+    background-color: white;
+    color: black;
+    padding-left: 50px;
+    padding-right: 20px;
+    padding-top: 20;
+    padding-bottom: 15;
+
+  }
+#kopi{
+  padding-top: 200;
+  width: 400;
+  margin-left: 700;
+  border-radius:0px 0px 100px 0px;
+  margin-bottom: 20;
+
+
+}
+
+
+
 
     </style>
     
     <div>
     <nav class="navbar navbar-expand-lg text-light bg-dark navbar-dark pb-4" id="navbar-main">
         <div class="container-fluid">
-            <a class="navbar-brand text-white pt-3 ps-3 pe-2" href="#">Coffee Shop</a>
+            <a class="navbar-brand text-white pt-3 ps-3 pe-2" href="#"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -92,7 +140,7 @@
                 <a class="nav-link active pt-4" href="#">Contact</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active pt-4" href="#">Career</a>
+                <a class="nav-link active pt-4" href="Career.html">Career</a>
               </li>
               <ul class="navbar-nav pt-3 ">
                 <li class="nav-item dropdown">
@@ -110,8 +158,8 @@
                 </li>
               </ul>
             </ul>
-            <a href=" shopping-cart.svg"></a>
           </div>
+          <img src="shopping-cart (5).svg" alt="cart" class=" pt-2 pe-3">
         </div>
       </nav>
     </div>
@@ -133,5 +181,18 @@
 <img class="photo1" src="9.jpg">
 <img class="photo2" src="2.jpg">
 <img class="photo3" src="7.jpg">
+
+<!--about me-->
+<div class="container" data-aos="fade-in" data-aos-duration="3000">
+  <img src="mike-kenneally-zlwDJoKTuA8-unsplash.jpg" alt="Norway" id="kopi">
+  <div class="text-block">
+    <p>Xing Fu Tang (幸福堂), known for making the best hand-crafted brown sugar boba from Taiwan, is finally here in the United States- featuring an open kitchen concept </p>
+  </div>
+</div>
+</div>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 </html>
